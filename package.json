@@ -4,10 +4,12 @@
   "description": "study node.js",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.14.1"
+    "cheerio": "^0.22.0",
+    "express": "^4.14.1",
+    "superagent": "^3.5.0"
   },
   "devDependencies": {
-    "utility":"^1.2.0"
+    "utility": "^1.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
