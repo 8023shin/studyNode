@@ -1,0 +1,28 @@
+{
+  "name": "shin",
+  "version": "1.0.0",
+  "description": "study node.js",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "utility":"^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8023shin/studyNode.git"
+  },
+  "keywords": [
+    "学习node"
+  ],
+  "author": "shin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/8023shin/studyNode/issues"
+  },
+  "homepage": "https://github.com/8023shin/studyNode#readme"
+}
