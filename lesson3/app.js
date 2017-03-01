@@ -21,6 +21,7 @@ app.get('/',function (req, res, next) {
         var ep = new eventproxy();
         var resArr= [];
         ep.after('personal_html',userUrls.length,function (results) {
+            //注册事件，当对所有url解析完成时调用该函数，结果存储在results中
             results = results.map(function (result) {
                 var userUrl = result[0];
                 var userHtml = result[1];
@@ -43,6 +44,7 @@ app.get('/',function (req, res, next) {
         });
         userUrls.forEach(function (userUrl) {
             superagent.get(userUrl).end(function (err, res) {
+                //发射事件
                 ep.emit('personal_html',[userUrl,res.text])
                 console.log('==============')
             })
